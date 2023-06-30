@@ -4,7 +4,10 @@
   "description": "Refeição (snack) - id - name - description - date (dd-mm-yyyy) - hours - insideTheDiet boolean - userId []",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix"
   },
   "keywords": [],
   "author": "",
