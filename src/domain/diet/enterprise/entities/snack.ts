@@ -25,7 +25,7 @@ export class Snack extends Entity<SnackProps> {
   }
 
   get hours() {
-    return this.props.hours
+    return this.props.hours.value
   }
 
   get insideTheDiet() {
@@ -34,6 +34,29 @@ export class Snack extends Entity<SnackProps> {
 
   get userId() {
     return this.props.userId
+  }
+
+  set name(value: string) {
+    this.props.name = value
+  }
+
+  set description(value: string) {
+    this.props.description = value
+  }
+
+  set date(value: Date) {
+    this.props.date = value
+  }
+
+  set hours(value: string) {
+    this.props.hours =
+      ConvertHoursIntoMinutesAndConvertMinutesIntoHours.convertHourStringToMinutes(
+        value,
+      )
+  }
+
+  set insideTheDiet(value: boolean) {
+    this.props.insideTheDiet = value
   }
 
   static create(props: SnackProps, id?: UniqueEntityID) {
