@@ -1,11 +1,12 @@
 import { Entity } from '@/core/entities/entity'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
+import { ConvertHoursIntoMinutesAndConvertMinutesIntoHours } from './value-objects/convert-hours-into-minutes-and-convert-minutes-into-hours'
 
 export interface SnackProps {
   name: string
   description: string
   date: Date
-  hours: string
+  hours: ConvertHoursIntoMinutesAndConvertMinutesIntoHours
   insideTheDiet: boolean
   userId: UniqueEntityID
 }

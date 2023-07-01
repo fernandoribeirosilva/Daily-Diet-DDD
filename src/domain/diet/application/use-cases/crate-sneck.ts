@@ -1,7 +1,7 @@
 import { Either, right } from '@/core/either'
 import { UniqueEntityID } from '@/core/entities/unique-entity-id'
 import { Snack } from '../../enterprise/entities/snack'
-import { ConvertHoursIntoMinutesAndConvertMinutesIntoHours } from '../../enterprise/entities/value-objects/turning-hours-into-minutes-and-turning-minutes-into-hours'
+import { ConvertHoursIntoMinutesAndConvertMinutesIntoHours } from '../../enterprise/entities/value-objects/convert-hours-into-minutes-and-convert-minutes-into-hours'
 import { ISnackRepository } from '../repositories/ISnack-repository'
 
 interface CreateSnackUseCaseRequest {

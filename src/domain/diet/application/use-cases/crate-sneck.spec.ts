@@ -1,5 +1,5 @@
 import { InMemorySnackRepository } from 'test/repositories/in-memory-snack-repository'
-import { ConvertHoursIntoMinutesAndConvertMinutesIntoHours } from '../../enterprise/entities/value-objects/turning-hours-into-minutes-and-turning-minutes-into-hours'
+import { ConvertHoursIntoMinutesAndConvertMinutesIntoHours } from '../../enterprise/entities/value-objects/convert-hours-into-minutes-and-convert-minutes-into-hours'
 import { CreateSnackUseCase } from './crate-sneck'
 
 let inMemorySnackRepository: InMemorySnackRepository
