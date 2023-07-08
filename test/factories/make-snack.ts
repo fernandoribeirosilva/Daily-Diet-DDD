@@ -11,9 +11,12 @@ export function makeSnack(
     {
       date: new Date(),
       description: faker.lorem.sentence(),
-      hours: new ConvertHoursIntoMinutesAndConvertMinutesIntoHours('07:55'),
-      insideTheDiet: false,
-      name: 'John Doe',
+      hours:
+        ConvertHoursIntoMinutesAndConvertMinutesIntoHours.convertHourStringToMinutes(
+          '07:55',
+        ),
+      insideTheDiet: true,
+      name: 'salada',
       userId: new UniqueEntityID(),
       ...override,
     },

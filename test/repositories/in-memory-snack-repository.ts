@@ -11,6 +11,12 @@ export class InMemorySnackRepository implements ISnackRepository {
     return snack
   }
 
+  async findManySnackByIdFromUser(userId: string) {
+    const snack = this.items.filter((item) => item.userId.toString() === userId)
+
+    return snack
+  }
+
   async save(snack: Snack) {
     const itemIndex = this.items.findIndex((item) => item.id === snack.id)
 
